@@ -1,0 +1,7 @@
+{
+	"datatype":"EXCEL",
+	"dbpass":"Z6nhliva",
+	"reportname":"test",
+	"browserDrivers":"drivers",
+	"appendreport":"true"
+}

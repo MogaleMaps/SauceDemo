@@ -1,0 +1,13 @@
+node('Windows10Node'){
+stage('SCM Checkout'){
+        git 'https://gitlab.com/iLABRepo/iLABEndToEndAutomationFramework3'
+    }
+stage('Build'){
+        def mvnHome = tool name: 'M2_HOME', type: 'maven'
+        bat "${mvnHome}/bin/mvn clean test"
+    }
+stage('Unittest'){
+step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
+}
+publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: false, reportDir: 'report/', reportFiles: 'test.html', reportName: 'HTML Report', reportTitles: ''])
+}
