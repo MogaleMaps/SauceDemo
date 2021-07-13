@@ -1,23 +1,23 @@
 # SauceDemo
 UI End to End tests using Selenium for Global Kinetic Assessment
 
-#Author
+# Author
 Johnson Mogale Mapaela
 Language : Java/Selenium
 IDE: IntelliJ
 P.S Please download all Maven Packages before running. 
 
-#Running the Test
+# Running the Test
 1. Test will run using Maven
 2. Test uses Chrome Driver version 91+
 3. Test Will execute in headless mode , configure in the Utility Functions Class
 4. All modules/methods/classes are coupled with Developer notes to in order to understand what the respective class/module does.
 
-#Test Report
+# Test Report
 1. A Test Report Directory will be created in the source folder upon executing the tests.
 2. Extent Reports Used. 
 
-#Test Approach
+# Test Approach
 1. Reading and Capturing Data:
 	1.1 Used a .xlsx file located in the TestData directory to store test cases to be executed. (Created 2 Test Cases , One that passes and One that Fails)
 
@@ -41,7 +41,7 @@ P.S Please download all Maven Packages before running.
 5. Web-Element Locator
 	5.1 Created an XML file that contains all web-elements for sauceLabs that will be used in the Test(s). File name, Common.xml 
 
-Extra Notes
+# Extra Notes
 
 * Open to new ways of writing tests( Please recommended/advise/suggest)
 * Issues encountered: Screenshots for test are being taken however not shown in Extent Test Report (Investigating)
